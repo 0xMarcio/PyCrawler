@@ -3,5 +3,4 @@ requests[socks]
 urllib3
 tld
 rich
-bs4
-re
+beautifulsoup4
