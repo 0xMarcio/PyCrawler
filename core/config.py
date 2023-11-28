@@ -1,4 +1,3 @@
-"""Configuration options for Photon."""
 from typing import List, LiteralString
 
 VERBOSE = False

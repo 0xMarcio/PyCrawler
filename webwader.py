@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""The Photon main part."""
 from __future__ import print_function
 
 import argparse
@@ -145,7 +144,7 @@ files = set()  # The pdf, css, png, etc. files.
 intel = set()  # The email addresses, website accounts, AWS buckets etc.
 robots = set()  # The entries of robots.txt
 custom = set()  # Strings extracted by custom regex pattern
-failed = set()  # URLs that photon failed to crawl
+failed = set()  # URLs we failed to crawl
 scripts = set()  # THe Javascript files
 external = set()  # URLs that don't belong to the target i.e. out-of-scope
 # URLs that have get params in them e.g. example.com/page.php?id=2
