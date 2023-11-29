@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 from re import Pattern
-from typing import LiteralString, List, Tuple, Any, Dict, Set
+#from typing import LiteralString, List, Tuple, Any, Dict, Set
 
 # regex taken from https://github.com/InQuest/python-iocextract
 # Reusable end punctuation regex.
@@ -215,7 +215,7 @@ YARA_PARSE: Pattern[Any] = re.compile(r"""
 CREDIT_CARD: Pattern[Any] = re.compile(r"[0-9]{4}[ ]?[-]?[0-9]{4}[ ]?[-]?[0-9]{4}[ ]?[-]?[0-9]{4}",
                                        re.MULTILINE | re.DOTALL | re.IGNORECASE | re.VERBOSE)
 
-rintels: list[tuple[Pattern[Any], LiteralString]] = \
+rintels = \
     [
         (GENERIC_URL, "GENERIC_URL"),
         (BRACKET_URL, "BRACKET_URL"),

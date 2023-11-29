@@ -23,7 +23,7 @@ from core.colors import good, info, run, green, red, end, bad
 from core.flash import flash
 from core.regex import rintels, js_sercrets
 from core.zap import zap
-
+from typing import Set
 
 # Disable SSL related warnings
 warnings.filterwarnings('ignore')
@@ -150,10 +150,10 @@ external = set()  # URLs that don't belong to the target i.e. out-of-scope
 # URLs that have get params in them e.g. example.com/page.php?id=2
 fuzzable = set()
 secrets = set()  # URLs found from javascript files
-processed: set[str] = set()  # URLs that have been crawled
-notFound: set[str] = set()
+processed: Set[str] = set()  # URLs that have been crawled
+notFound: Set[str] = set()
 # URLs that belong to the target i.e. in-scope
-internal: set[str] = set()
+internal: Set[str] = set()
 alreadySeen = {'', '/', '#'}
 alreadySeenJs = {'', '/', '#'}
 alreadySeenIntel = {'', '/', '#'}

@@ -4,3 +4,4 @@ urllib3
 tld
 rich
 beautifulsoup4
+typing
